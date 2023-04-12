@@ -33,6 +33,12 @@
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
+            opacity: 0.5; /* make the button semi-transparent */
+        }
+
+        .button.enabled {
+            opacity: 1; /* make the button fully opaque */
+            cursor: pointer; /* change the cursor to indicate that the button is clickable */
         }
     </style>
 
@@ -45,11 +51,25 @@
             <input type="text" id="username" name="username" required><br><br>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required><br><br>
-            <input type="submit" value="Login">
-            <a class="button" href="home.html"> HomePage</a>
+            <!--<input type="submit" value="Login">-->
+            <button onclick="home.html" id="button" class="button" disabled>HomePage </button>
         </form>
     </div>
 
-  
+
+    <script>
+        const input = document.getElementById("username");
+        const button = document.getElementById("button");
+
+        input.addEventListener("input", function () {
+            if (input.value === "teste") {
+                button.classList.add("enabled");
+                button.removeAttribute("disabled");
+            } else {
+                button.classList.remove("enabled");
+                button.disabled = true;
+            }
+        });
+    </script>
 </body>
 </html>

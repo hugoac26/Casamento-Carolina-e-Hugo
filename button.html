@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conditional Button</title>
+	<style>
+		.button {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: #fff;
+			text-decoration: none;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+			opacity: 0.5; /* make the button semi-transparent */
+		}
+		
+		.button.enabled {
+			opacity: 1; /* make the button fully opaque */
+			cursor: pointer; /* change the cursor to indicate that the button is clickable */
+		}
+	</style>
+</head>
+<body>
+	<label for="input">Enter a value:</label>
+	<input type="text" id="user">
+	<button id="button" class="button" disabled>Submit</button>
+
+	<script>
+		const input = document.getElementById("user");
+		const button = document.getElementById("button");
+
+		input.addEventListener("input", function() {
+			if (input.value === "1") {
+				button.classList.add("enabled");
+				button.removeAttribute("disabled");
+			} else {
+				button.classList.remove("enabled");
+				button.disabled = true;
+			}
+		});
+	</script>
+</body>
+</html>
