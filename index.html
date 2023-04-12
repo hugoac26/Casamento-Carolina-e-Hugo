@@ -1,15 +1,36 @@
 ﻿<html>
 <head>
     <title>Login Page</title>
+    <style>
+        body {
+            background-image: url("./img/background login.png");
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+            background-color: antiquewhite
+        }
+    </style>
+
+    <style>
+        .centered {
+            margin: 0 auto;
+            width: 5%;            
+            padding: 525px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Login</h1>
-    <form action="home.html" method="POST">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        <input type="submit" value="Login">
-    </form>
+    <div class="centered">
+        <h1>Login</h1>
+        <form action="home.html" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+  
 </body>
 </html>
