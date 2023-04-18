@@ -64,18 +64,18 @@
 
 
         <script>
-            const input = document.getElementById("username");
-            const pass = document.getElementById("password");
+            //const input = document.getElementById("username");
+            const input = document.getElementById("password");
             const button = document.getElementById("button");
 
             input.addEventListener("input", function () {
-                if (input.value === "Carolina&Hugo") {
+                if (input.value === "06102024") {
                     button.classList.add("enabled");
-                    button.removeAttribute("disabled");
+                    button.removeAttribute("disabled"); 
 
                 } else {
                     button.classList.remove("enabled");
-                    button.disabled = true;
+                    button.disabled = true; 
                 }
             });
         </script>
