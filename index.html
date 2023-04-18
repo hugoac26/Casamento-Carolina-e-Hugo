@@ -45,7 +45,6 @@
                 cursor: pointer; /* change the cursor to indicate that the button is clickable */
             }
     </style>
-
 </head>
 <body>
     <div class="centered">
@@ -58,26 +57,10 @@
         <!--<input type="submit"  value="Login" >-->
         <!--<button onclick=home.html id="button" class="button" disabled>HomePage </button>-->
         <a href="home.html" id="button" class="button" disable> Login  </a>
-        
+
         <!--</form>-->
     </div>
 
-
-        <script>
-            //const input = document.getElementById("username");
-            const input = document.getElementById("password");
-            const button = document.getElementById("button");
-
-            input.addEventListener("input", function () {
-                if (input.value === "06102024") {
-                    button.classList.add("enabled");
-                    button.removeAttribute("disabled"); 
-
-                } else {
-                    button.classList.remove("enabled");
-                    button.disabled = true; 
-                }
-            });
-        </script>
-    </body>
+    <script src="js/obfuscated.js"></script>
+</body>
     </html>
