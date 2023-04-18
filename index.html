@@ -48,31 +48,31 @@
 <body>
     <div class="centered">
         <h1>Login</h1>
-        <form action=home.html method="POST">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required><br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><br>
-            <input type="submit" value="Login">
-            <!--<button onclick=home.html id="button" class="button" disabled>HomePage </button>
-    <a href="home.html" id="button" class="button" disable> Home  </a>-->
-        </form>
-    </div>
+        <!--<form action=home.html method="POST">-->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit"  value="Login" >
+        <!--<button onclick=home.html id="button" class="button" disabled>HomePage </button>-->
+    <a href="home.html" id="button" class="button" disable> Home  </a>
+        <!--</form>-->
+        </div>
 
 
-    <script>
-        const input = document.getElementById("username");
-        const button = document.getElementById("button");
+        <script>
+            const input = document.getElementById("username");
+            const button = document.getElementById("button");
 
-        input.addEventListener("input", function () {
-            if (input.value === "teste") {
-                button.classList.add("enabled");
-                button.removeAttribute("disabled");
-            } else {
-                button.classList.remove("enabled");
-                button.disabled = true;
-            }
-        });
-    </script>
-</body>
-</html>
+            input.addEventListener("input", function () {
+                if (input.value === "teste") {
+                    button.classList.add("enabled");
+                    button.removeAttribute("disabled");
+                } else {
+                    button.classList.remove("enabled");
+                    button.disabled = true;
+                }
+            });
+        </script>
+    </body>
+    </html>
