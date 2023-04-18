@@ -26,19 +26,21 @@
 
     <style>
         .button {
+            visibility: hidden;
             display: inline-block;
             padding: 10px 20px;
             background-color: #007bff;
             color: #fff;
             text-decoration: none;
             border: none;
-            border-radius: 5px;
+            border-radius: 0px;
             font-size: 16px;
             cursor: pointer;
-            opacity: 0.5; /* make the button semi-transparent */
+            opacity: 0.2; /* make the button semi-transparent */
         }
 
             .button.enabled {
+                visibility: visible;
                 opacity: 1; /* make the button fully opaque */
                 cursor: pointer; /* change the cursor to indicate that the button is clickable */
             }
@@ -53,21 +55,24 @@
         <input type="text" id="username" name="username" required><br><br>
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required><br><br>
-        <input type="submit"  value="Login" >
+        <!--<input type="submit"  value="Login" >-->
         <!--<button onclick=home.html id="button" class="button" disabled>HomePage </button>-->
-    <a href="home.html" id="button" class="button" disable> Home  </a>
+        <a href="home.html" id="button" class="button" disable> Login  </a>
+        
         <!--</form>-->
-        </div>
+    </div>
 
 
         <script>
             const input = document.getElementById("username");
+            const pass = document.getElementById("password");
             const button = document.getElementById("button");
 
             input.addEventListener("input", function () {
-                if (input.value === "teste") {
+                if (input.value === "Carolina&Hugo") {
                     button.classList.add("enabled");
                     button.removeAttribute("disabled");
+
                 } else {
                     button.classList.remove("enabled");
                     button.disabled = true;
