@@ -1,0 +1,59 @@
+* {
+    margin: 15px;
+    padding: 0px;
+    box-sizing: content-box;
+
+}
+
+body {
+    font-family: "Lato", sans-serif;
+
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+h3 {
+    color:antiquewhite;
+}
+h4 {
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 3rem;
+}
+.coming-soon {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("./img/hero.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 30%;
+
+}
+
+.day,
+.hour,
+.minute {
+    font-size: 10rem;
+    color: antiquewhite;
+}
+.second {
+    font-size: 10rem;
+    color: antiquewhite;
+}
+
+.waiting {
+    height: 100vh;
+}
