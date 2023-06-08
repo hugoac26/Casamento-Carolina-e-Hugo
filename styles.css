@@ -43,7 +43,7 @@ nav {
     height: 50vh;
     margin: 0;
     padding-top: 60vh;
-    height: calc(100% - 5px);
+    height: calc(100% - 10px);
     text-align: center;
     padding: 50px 20px;
     color: antiquewhite;
@@ -72,9 +72,9 @@ nav {
 }
 
     .countdown span {
-        width: 100px;
-        height: 80px;
-        border: 3px solid#f1c40f;
+        width: 120px;
+        height: 100px;
+        border: 4px solid#f1c40f;
         display: grid;
         place-items: center;
         font-weight: bold;

@@ -68,9 +68,15 @@ html, body{
     margin-top: 2em;
     color:black;
 }
-.timer {
+.title1 {
     font-family: 'Caveat', cursive;
-    font-size: 3em;
+    font-size: 7em;
+    margin-top: 1em;
+    color: antiquewhite;
+}
+.title2 {
+    font-family: 'Caveat', cursive;
+    font-size: 4em;
     margin-top: 1em;
     color: antiquewhite;
 }
