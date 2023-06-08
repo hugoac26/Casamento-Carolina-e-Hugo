@@ -43,7 +43,7 @@ nav {
     height: 50vh;
     margin: 0;
     padding-top: 60vh;
-    height: calc(100% - 10px);
+    height: inherit;
     text-align: center;
     padding: 50px 20px;
     color: antiquewhite;
